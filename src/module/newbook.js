@@ -40,7 +40,8 @@ const newBook = handleActions(
         [CREATED_BOOK] : (state, action) => ({
             ...state,
             controlDisabled : false,
-            initialState
+            title : '',
+            author : ''
         })
         
     },

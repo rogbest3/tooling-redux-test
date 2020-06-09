@@ -1,6 +1,6 @@
 .Book {
     width: 170px;
-    min-height: 300px;
+    min-height: 200px;
   }
   
   .Book > img {
@@ -13,4 +13,5 @@
   }
   .Books{
     display: flex;
+    height: 200px;
   }

@@ -6,7 +6,7 @@ const DELETING_BOOK = 'bookDetails/DELETING_BOOK'
 const DELETED_BOOK = 'bookDetails/DELETED_BOOK'
 
 export const fetchingBook = createAction(FETCHING_BOOK)
-export const fetchedBook = createAction(FETCHED_BOOK, books => books)
+export const fetchedBook = createAction(FETCHED_BOOK, book => book)
 export const deletingBook = createAction(DELETING_BOOK)
 export const deletedBook = createAction(DELETED_BOOK)
 
@@ -25,7 +25,7 @@ const bookDetails = handleActions(
         [FETCHED_BOOK] : (state, action) => ({
             ...state,
             loading : false,
-            books : action.payload
+            book : action.payload
         }),
         [DELETING_BOOK] : (state, action) => ({
             ...state,

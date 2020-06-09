@@ -59,6 +59,7 @@ export const createBook =(title, author)=>(
 export const fetchBook = title => (
     new Promise(resolve => {
         setTimeout(()=>{
+            // console.log(BOOKS[0].title)
             resolve(BOOKS.find(book => book.title === title))
         }, LATENCY)
     })
